@@ -3,7 +3,7 @@ This is a work in progress and an attempt to create a generative chatbot that is
 off of the Slack data which is scraped in a Dict format with questions being the key and answers being the value.       It will then be tokenized using BPE and converted to
 sequences to enable it to be fed into a Neural Network for training.    The initial model will be an RNN and depending on it's performance, more models may be used.    
 
-Current Contents:
+Current Contents:'/n'
 
 1: Slack_Scraper:   This is a simple scraper that uses the Slack API to join channels and then scrape all data.   Data is not stored in a DICT format.  This was created at
 an earlier stage of the project and is being retained for potential futures use in the project.
