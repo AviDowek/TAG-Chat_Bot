@@ -4,6 +4,7 @@ off of the Slack data which is scraped in a Dict format with questions being the
 sequences to enable it to be fed into a Neural Network for training.    The initial model will be an RNN and depending on it's performance, more models may be used.    
 
 Current Contents:
+
 1: Slack_Scraper:   This is a simple scraper that uses the Slack API to join channels and then scrape all data.   Data is not stored in a DICT format.  This was created at
 an earlier stage of the project and is being retained for potential futures use in the project.
 
