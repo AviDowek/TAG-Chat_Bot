@@ -1,7 +1,7 @@
 # TAG-Chat_Bot
 This is a work in progress and an attempt to create a generative chatbot that is trained on the TAG Slack Channels and the Internal Wiki.     The training data currently is built
 off of the Slack data which is scraped in a Dict format with questions being the key and answers being the value.       It will then be tokenized using BPE and converted to
-sequences to enable it to be fed into a Neural Network for training.    The initial model will be an RNN and depending on it's performance, more models may be used.    
+sequences to enable it to be fed into a Neural Network for training.    The initial model will be an RNN and depending on it's performance, more models may be used.    UPDATE: In addition to a fully generative model, I have also create an IR Based Model.  This IR Model uses OpenAI Embedddings and a FAISS index for retrieval.   The results are then passed to OpenAI to be used as the reader and then send a response to the user through the Slack API.
 
 Current Contents: 
 
@@ -14,5 +14,8 @@ as part of the Bot Knowledge Base.
 
 3:Slack_Dict:     This is a modified version of the Slack_Scraper that stores Questions and Answers in DICT format.
 
+4: Emebedder and Indexer for an IR based Model
+
+5: Slack integration and Inference script for the IR model
 
 This page will be updated as the project progresses.
